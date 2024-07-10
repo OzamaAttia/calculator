@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+body {
+    background-color: #1e2836;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    /* background-color: #5a6579; */
+}
+.calc {
+    background-color: #283345;
+    padding: 18px;
+    width: 500px;
+    height: 675px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.64);
+    /* background-color: #eee;
+    color: #000; */
+    overflow: hidden;
+}
+.output {
+    background-color: #1d283910;
+    /* margin-top: 5px; */
+    /* margin-bottom: -5px; */
+    /* border-radius: 20px 20px 5px 5px; */
+    text-align: end;
+    font-size: 70px;
+    padding: 5px;
+    color: #ddd;
+    /* background-color: #2b384e9c;
+    box-shadow: 0px -20px 10px 20px #2b384e9c; */
+}
+table {
+    align-items: center;
+    flex: 1;
+}
+tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.box {
+    border-radius: 30px;
+    background-color: #283345;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.034),
+    5px 5px 5px rgba(0, 0, 0, 0.411);
+    width: 100px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    /* box-shadow: -5px -5px 5px rgba(39, 39, 39, 0.034),
+    5px 5px 5px rgba(0, 0, 0, 0.109); */
+    font-size: 40px;
+    color: #eee;
+    border: none;
+    cursor: pointer;
+}
+.box:hover {
+    transform: scale(1.02);
+    /* font-size: 42px; */
+}
+.box:focus {
+    box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.034),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.411);
+    transform: scale(0.98);
+}
+.box2 {
+    width: 220px;
+    padding-right: 117px;
+}
+i {
+    color: #ee8f07;
+}
+@media (max-width: 767px) {
+    body {
+        height: 100dvh;
+        width: 100dvw;
+    }
+    .calc {
+        width: calc(100% - 25px);
+        height: 640px;
+        padding: 20px 7px 15px;
+    }
+    table {
+        font-size: 40px;
+    }
+    .output {
+        font-size: 60px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+    .box {
+        width: 80px;
+        height: 82px;
+    }
+    .box2 {
+        width: 170px;
+        padding-right: 90px;
+    }
+}
+
+/*  */
+/*  */
+/*  */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1e2836;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+.calc {
+    background-color: #283345;
+    padding: 18px;
+    width: 500px;
+    height: 750px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.64);
+    overflow: hidden;
+}
+.output {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: end;
+    font-size: 70px;
+}
+table {
+    align-items: center;
+    font-size: 40px;
+    box-shadow: inset 0px 20px 0px 250px #00000014, 0px 73px 0px 70px #00000014;
+}
+tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+tr:first-of-type {
+    color: #ddd;
+}
+.box {
+    border-radius: 30px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.034),
+        5px 5px 5px rgba(0, 0, 0, 0.411);
+    width: 100px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.box:hover {
+    box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.034),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.411);
+    transform: scale(1.05);
+    font-size: 42px;
+}
+.box2 {
+    width: 220px;
+    padding-right: 117px;
+}
+.marck {
+    color: #ee8f07;
+}
+@media (max-width: 767px) {
+    body {
+        height: 100dvh;
+        width: 100dvw;
+    }
+    .calc {
+        width: calc(100% - 25px);
+        padding: 20px 7px 15px;
+    }
+    table {
+        font-size: 40px;
+    }
+    .output {
+        font-size: 60px;
+        margin-right: 5px;
+    }
+    .box {
+        width: 80px;
+    }
+    .box2 {
+        width: 170px;
+        padding-right: 90px;
+    }
+} */
+

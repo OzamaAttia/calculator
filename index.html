@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calc">
+        <input type="text" class="screen output" id="screen" placeholder="0">
+        <table>
+            <tr>
+                <td class="">
+                    <button class="symbol box" onclick="wipe()">AC</button>
+                </td>
+                <td class="">
+                    <button class="symbol box" onclick="arafa()">Del</button>
+                </td>
+                <td class="">
+                    <button class="symbol box" onclick="show('%')">%</button>
+                </td>
+                <td class="marck ">
+                    <button class="symbol box" onclick="show('/')">
+                        <i class="fa-solid fa-divide"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                    <button class="number box" onclick="show('7')">7</button>
+                </td>
+                <td class="">
+                    <button class="number box" onclick="show('8')">8</button>
+                </td>
+                <td class="">
+                    <button class="number box" onclick="show('9')">9</button>
+                </td>
+                <td class="marck ">
+                    <button class="symbol box" onclick="show('*')">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                    <button class="number box" onclick="show('4')">4</button>
+                </td>
+                <td class="">
+                    <button class="number box" onclick="show('5')">5</button>
+                </td>
+                <td class="">
+                    <button class="number box" onclick="show('6')">6</button>
+                </td>
+                <td class="marck ">
+                    <button class="symbol box" onclick="show('-')">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                    <button class="number box" onclick="show('1')">1</button>
+                </td>
+                <td class="">
+                    <button class="number box" onclick="show('2')">2</button>
+                </td>
+                <td class="">
+                    <button class="number box" onclick="show('3')">3</button>
+                </td>
+                <td class="marck ">
+                    <button class="symbol box" onclick="show('+')">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="">
+                    <button class="number box box2" onclick="show('0')">0</button>
+                </td>
+                <td class="">
+                    <button class="symbol box" onclick="show('.')">.</button>
+                </td>
+                <td class="marck ">
+                    <button class="symbol box" onclick="calc('=')">
+                        <i class="fa-solid fa-equals"></i>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
